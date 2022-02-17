@@ -1,0 +1,12 @@
+div.field {
+  padding-bottom: 10px;
+}
+div.field label {
+  display: block;
+  float: left;
+  width: 250px;
+  height: 15px;
+}
+body {
+  background: linear-gradient(105deg, #c5dde8,#eecfba);
+} 

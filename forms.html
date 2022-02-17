@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5 лаба</title>
+	<style>
+   #user {
+    width: 300px; /* Ширина поля в пикселах */
+   } 
+  </style>
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+<h4>Регистрация на сайте</h4>
+<form action="form.php" method="post">
+	<div class="field">
+	<label>E-mail:</label>
+	<input type="text" name="E-mail" placeholder="name@welcome.com" id="user" size="5">
+	<div class="field">
+	<label>Пароль:</label>
+	<input type="text" name="password" placeholder="Введите пароль" id="user" size="5">
+	<div class="field">
+	<label>Повтор пароля:</label>
+	<input type="text" name="password2" placeholder="Повторите пароль" id="user" size="5">
+	<div class="field">
+	<label>Форма собственности:</label>
+	<select>
+		<option>Собственник</option>
+		<option>Не собственник</option>
+	</select>
+	<div class="field">
+	<label>Название организации:</label>
+	<input type="text" name="company" placeholder="Только название организации"id="user" size="5">
+	<div class="field">
+	<label>Контактное лицо</label>
+	<input type="text" name="contact" placeholder="Иванов Иван Иванович" id="user" size="5">
+	<div class="field">
+	<label>Контактный телефон</label>
+	<input type="text" name="phone" placeholder="+7 (999) 999-99-99" id="user" size="5">
+	<div class="field">
+	<label>Адрес:</label> 
+	<textarea name="adress" id="user" size="5">	</textarea>
+	<div class="field"><label>Откуда вы узнали о компании?</label>
+	<select>
+		<option>Интернет</option>
+		<option>Птички напели</option>
+	</select>
+	<p></p>
+	<input type="submit" value="Зарегистрировать">
+</form>
+</body>
+</html>
