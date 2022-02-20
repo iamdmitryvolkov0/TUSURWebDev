@@ -1,8 +1,13 @@
 <?php
 
-require_once
+require_once __DIR__ . '/data.php';
+require_once __DIR__ . '/functions.php';
 
->
+if (!empty($_POST))
+{
+    debug($_POST);
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +22,7 @@ require_once
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <form>
+            <form method="post">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" placeholder="email@welcome.com" class="form-control" id="email">
@@ -64,4 +69,4 @@ require_once
 </div>
 
 </body>
-</html>
+</html><?php
