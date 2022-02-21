@@ -16,3 +16,6 @@ require 'functions.php';
 <br>
 <div style="text-align: center;">Письмо с подтверждением регистрации отправлено на <?php echo $_POST['email'];?></div>
 </body>
+<?php
+debug($_POST);
+?>
