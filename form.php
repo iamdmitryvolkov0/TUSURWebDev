@@ -5,15 +5,7 @@ require 'functions.php';
 
 if (!empty($_POST))
 {
-    //debug($_POST); //вывод key - value
-
     $fields = load($fields); //почему не инициализирована???
-    //debug($fields); //вывод $fields с данными
-
-    if ($errors = validate($fields))
-    {
-        debug($errors);
-    }
 }
 ?>
 
@@ -67,7 +59,7 @@ if (!empty($_POST))
                     <label>Откуда узнали о нас:</label>
                     <select name="from_question">
                         <option value="1">Птички напели</option>
-                        <option value="2">Ветром занесло</option>
+                        <option value="0">Ветром занесло</option>
                     </select>
                 </div>
                 <input type="submit" class="btn btn-primary" value="Зарегистрироваться"/>

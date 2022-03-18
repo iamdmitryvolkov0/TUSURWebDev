@@ -2,8 +2,9 @@
 require 'data.php';
 require 'functions.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
+    <!DOCTYPE html>
+    <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Результат регистрации</title>
@@ -14,7 +15,16 @@ require 'functions.php';
 <br>
 <br>
 <br>
-<div style="text-align: center;">Письмо с подтверждением регистрации отправлено на <?php echo $_POST['email'];?></div>
+<div style="text-align: center;">
+    <?php if (!empty($_POST)) {
+        echo "Письмо с подтверждением регистрации отправлено на " . $_POST['email'] . "<br>" . "<br>";
+        if (($_POST['from_question']) == 1){
+            echo "<h4>Вам о нас напели птички, исходя из анкеты</h4>";
+        }
+        else echo "<h4>Ваc занесло ветром, исходя из анкеты</h4>";
+
+    } ?>
+</div>
 </body>
 <?php
 debug($_POST);
