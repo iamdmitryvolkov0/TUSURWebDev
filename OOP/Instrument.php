@@ -51,10 +51,9 @@ $route[0]=new Avto("Tomsk", 100);
 $route[1]=new Poezd("Novosibirsk", 300);
 $route[2]=new Samolet("Moscow", 3500);
 
-for ($i=0;$i>3;$i++){
+for ($i=0;$i<3;$i++){
     echo     "<br><br>Город: ".$route[$i]->city.
              "<br>Расстояние: ".$route[$i]->km.
              "<br>Время: ".$route[$i]->CalcTime($route[$i]->km).
              "<br>Стоимость доставки: ".$route[$i]->CalcPrice($route[$i]->km);
 }
-var_dump(Gruz::class);
