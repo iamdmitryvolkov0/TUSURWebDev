@@ -5,7 +5,8 @@ require 'functions.php';
 
 if (!empty($_POST))
 {
-    $fields = load($fields); //почему не инициализирована???
+    $fields =null;
+    $fields = load($fields);
 }
 ?>
 

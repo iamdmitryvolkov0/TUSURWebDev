@@ -16,15 +16,3 @@ function load($data): array
     }
     return $data;
 }
-
-function validate($data)
-{
-    $errors = '';
-    foreach ($data as $key => $value) {
-        if ($data[$key]['required'] = 1 && empty($data[$key]['value'])) //проверка заполнения полей
-        {
-            $errors .= "<li>Вы не заполнили поле {$data[$key]['field_name']}</li>";
-        }
-    }
-    echo $errors;
-}
